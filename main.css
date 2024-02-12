@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box; }
+
+.container{
+    width: 100%;
+    margin-bottom: 60px;
+    
+/* display: flex;
+flex-direction: column; */
+
+}
+/* header */
+.header{
+    margin-left: 160px;
+    margin-right: 160px;
+}
+.circles{
+    margin-top: 20px;
+    margin-bottom: 1em;
+    display: inline-block;
+
+}
+.circle {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    margin: 3px;
+    display: inline-block;
+  }
+.circle-blackred{
+    background-color: #7E180B;
+}
+.circle-red{
+    background-color: #F53822;
+}
+.circle-orange{
+    background-color: #FFDB35;
+}
+.header__text{
+    margin-bottom: .5em;
+    font-size: 48px;
+    font-weight: 400;
+}
+.header__description{
+    /* margin-bottom: 2em; */
+    font-size: 24px;font-weight: 400;
+}
+/* product */
+.products{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* gap: 50px; */
+    margin-left: 160px;
+    margin-right: 160px;
+    justify-content: space-around;
+}
+.product__card{
+    width: 490px;
+    height: 490px;
+    border: 1px solid #252423;
+    padding: 30px;
+    margin-bottom: 20px;
+    border-radius: 15px;
+    position: relative;
+
+}
+
+.product__title{
+    font-size: 30px;
+    line-height: 36px;
+    margin-bottom: 30px;
+}
+.product__text{
+    margin-bottom: 20px;
+}
+.product__price{
+    position:absolute;
+    font-size: 30px;
+    line-height: 36px;
+    margin-bottom: 113px;
+    bottom: 0;
+}
+.product__button{
+    position:absolute;
+    border: 1px solid #252423;
+    padding: 20px 40px;
+    border-radius: 40px;
+    cursor: pointer;
+    transition: 1s ;
+    bottom: 0;
+    margin-bottom: 40px;
+}
+.product__button:hover{
+    background: linear-gradient(to right,#7E180B, #F53822, #FFDB35);
+    border-color: white;
+    transition: 1s ;
+    color: white;
+}
+.product__colors{
+    color: #8F8F8F;
+    /* margin-left: 15px; */
+}
+.product__card:hover{
+    background: url("./Premium.png") 0 0 no-repeat;
+    color: #fff;
+    .product__text{
+        color: #fff;
+    }
+    .colors__list{
+        color: #fff;
+    }
+    .product__colors{
+        color: #fff;
+    }
+}
